@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+  
+  <script>
+    function enabledTextarea() {
+        document.getElementById('others').onchange = function() {
+            let othersTextarea = document.getElementById('others-textarea'); 
+            othersTextarea.disabled = !this.checked;
+
+            if(!this.checked == true) {
+                othersTextarea.value = null; 
+            }
+        };
+    }
+</script>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <h1 id="title">freeCodeCamp - Responsive Web Design Projects</h1>
+        <h2>Programming skills and the freeCodeCamp courses</h2>
+    </header>
+    <main id="main">
+        <p id="description">Survey to ask about your programming skills and the freeCodeCamp courses you have taken</p>
+        <form id="survey-form">
+            <fieldset class="grid-container">
+                <div class="grid-item">
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="grid-item">
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="grid-item">
+                    <label id="number-label" for="age">Age:</label>
+                    <input class="small_input" type="number" id="number" name="age" title="Enter your age (optional)"
+                        min="1" max="120" placeholder="1 to 120">
+                </div>
+                <div class="grid-item">
+                    <label for="dropdown">Gender:</label>
+                    <select class="small_input" id="dropdown" name="dropdown">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>How many years of programming skills do you have?</h2>
+                <div>
+                    <input type="radio" id="beginner" name="programming-skills" value="beginner" checked>
+                    <label for="beginner">0 years - I am an absolute beginner</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="advanced" name="programming-skills" value="advanced">
+                    <label for="advanced">1-5 years - I am a beginner, but I have already successfully solved some programming projects.</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="professional" name="programming-skills" value="professional">
+                    <label for="professional">> 5 years - I am a professional software developer</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Which freeCodeCamp courses did you have finished?</h2>
+                <div>
+                    <input type="checkbox" id="backEndDevelopmentAndAPIs" name="drone" value="BackEndDevelopmentAndAPIs" checked>
+                    <label for="backEndDevelopmentAndAPIs">Back End Development and APIs</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="qualityAssurance" name="drone" value="QualityAssurance">
+                    <label for="qualityAssurance">Quality Assurance</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="scientificComputingWithPython" name="drone" value="ScientificComputingWithPython">
+                    <label for="scientificComputingWithPython">Scientific Computing with Python</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="others" name="drone" value="others" onclick="enabledTextarea()">
+                    <label for="others">others, namely the following ...</label>
+                </div>     
+               <div>
+                   <textarea id="others-textarea" placeholder="Enter your courses here..." disabled></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <input id="submit" type="submit">
+            </fieldset>
+        </form>
+    </main>
+    <footer>FreeCodeCamp | A Survey Form | 2022</footer>
+
+
+    
+
+</body>
+
+</html>

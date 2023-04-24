@@ -1,0 +1,41 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    row-gap: 5px;
+  }
+  
+  footer {
+    margin-top: 10px;
+  }
+  
+  .grid-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+  }
+  
+  #survey-form {
+    width: 750px;
+    max-width: 750px;
+    display: grid;
+  }
+  
+  fieldset {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #others-textarea {
+    margin: 10px;
+    width: 500px;
+    max-width: 500px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 400px;
+  }
+  
+  .small_input {
+    width: 100px;
+  }
