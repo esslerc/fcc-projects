@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    width: 900px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#description {
+    width: 900px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    font: 12px;
+    box-shadow: .5px .5px 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background-color: #999;
+
+}
+
+.info {
+    font-size: 0.8em;
+}
+
+#footer {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.county {
+    fill: #ccc;
+    stroke: #999;
+}

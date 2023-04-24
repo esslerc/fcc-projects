@@ -1,0 +1,125 @@
+@media only screen {
+    * {
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+       padding: 0;
+   }
+
+   body{
+       background-color: #333;
+       color: #dedede;
+   }
+
+   a {
+       color: #dedede;
+       text-decoration: none;
+   }
+
+   a:hover {
+       color: #dedede;
+       text-decoration: none;
+   }
+
+   #navbar {
+       position: fixed;
+       min-width: 200px;
+       top: 0px;
+       left: 0px;
+       width: 210px;
+       height: 100%;
+       border-right: solid;
+       border-color: rgba(0, 22, 22, 0.4);
+   }
+
+   #main-doc {
+       position: absolute;
+       margin-left: 220px;
+       padding: 20px;
+       margin-bottom: 110px;
+   }
+   
+   #Introduction {
+       margin-top: 5px !important;
+   }
+
+   .doc-header {
+       position: relative;
+       font-size: 30px;
+       z-index: 1;
+       overflow: hidden;
+       text-align: left;
+   }
+
+   .doc-header:after {
+       position: absolute;
+       margin-left: 1em;
+       top: 51%;
+       overflow: hidden;
+       width: 100%;
+       height: 3px;
+       content: '\a0';
+       background-color: #00141466;
+   }
+
+   .doc-header:before {
+       margin-left: -50%;
+       text-align: right;
+   }
+
+   .doc-article {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .code-snippet-header {
+       margin: 10px 10px 0 10px ;
+       text-decoration: underline;
+       font-weight: bold;
+   }
+
+   .main-section {
+       display: flex;
+       flex-direction: column;
+       margin: 30px 0 10px 0;
+       padding-bottom: 20px;
+   }
+
+   .nav-link-li a {
+       display: block;
+       padding: 20px;
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   .nav-link-li {
+       width: 100%;
+       text-align: center;
+       list-style: none;
+   }
+
+   .nav-link-li:hover {
+       background-color: rgb(44, 68, 150);
+   }
+
+   .main-section > header {
+       font-size: x-large;
+       margin-bottom: 10px;
+   }
+
+   header > h1 {
+       margin: 10px 0 10px 0;
+       text-align: center;
+   }
+
+   code {
+       padding: 20px;
+       margin: 10px;
+       background-color: #222;
+       color: white;
+       border: 1px solid transparent;
+   }
+
+   .overview-list {
+       margin: 20px 50px 0 50px;
+   }
+}

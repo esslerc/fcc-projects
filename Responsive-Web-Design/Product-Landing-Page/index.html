@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header id="header" class="flex-centered, flex-column">
+        <nav id="nav-bar" class="flex-centered">
+            <a class="nav-link" href="#product-info">Plants</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <section id="welcome-image">
+            <h1 id="title">Plants!<br>Because everybody ought to have one</h1>
+            <img id="header-img" src="https://cdn.pixabay.com/photo/2019/05/18/02/59/palm-4211167_960_720.jpg"
+                alt="welcome-image" width="560px" height="400px"/>
+        </section>
+    </header>
+    <main id="main">
+        <section id="product-info" class="section-padding">
+            <div class="center">
+                <h1>Plants</h1>
+                <p id="product-info-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div id="video-item">
+                 <iframe id="video" width="640" height="360" src="https://player.vimeo.com/video/629483439?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1" title="cuong-bonsai-gras-baum-plant-flora-90651">Your browser does not support the video tag.</iframe> 
+                <p style="font-size: x-small;">Video owns by <a
+                        href="https://pixabay.com/de/videos/cuong-bonsai-gras-baum-plant-flora-90651/">DuyCuong1080</a>
+                    on pixabay</p>
+            </div>
+        </section>
+        <section id="pricing" class="section-padding">
+            <div class="content">
+                <h2>Choose your plant price model</h2>
+                <div id="prices">
+                    <div class="price">
+                        <img name="small-plant" width="250px" height="300px"
+                            src="https://cdn.pixabay.com/photo/2012/04/14/16/53/flowers-34592_960_720.png"
+                            alt="small-plant" />
+                        <label for="small-plant" class="price-model-label">Small Plant</label>
+                        <div class="price-model-features">
+                            <ul>
+                                <li>Suitable for small rooms</li>
+                                <li>Easy to handle</li>
+                                <li>For a semi-shade location</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <img name="medium-plant" width="300px" height="400px"
+                            src="https://cdn.pixabay.com/photo/2012/04/14/16/53/flowers-34592_960_720.png"
+                            alt="medium-plant" />
+                        <label for="medium-plant" class="price-model-label">Medium Plant</label>
+                        <div class="price-model-features">
+                            <ul>
+                                <li>Suitable for medium large rooms</li>
+                                <li>Also easy to handle</li>
+                                <li>For a semi-shade or sunny location</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <img name="big-plant" width="350px" height="500px"
+                            src="https://cdn.pixabay.com/photo/2012/04/14/16/53/flowers-34592_960_720.png"
+                            alt="big plant" />
+                        <label for="big-plant" class="price-model-label">Big Plant</label>
+                        <div class="price-model-features">
+                            <ul>
+                                <li>Suitable for large rooms</li>
+                                <li>Requires advanced plant care knowledge</li>
+                                <li>Only for a sunny location</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-padding">
+            <h2>Register for our newsletter</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label id="name-label" for="name" style="grid-column: 1; grid-row: 1;">Name:</label>
+                <input type="text" id="name" style="grid-column: 2; grid-row: 1;" name="name"
+                    placeholder="Enter your name" required>
+                <label id="mail-label" for="email" style="grid-column: 1; grid-row: 2;">Email:</label>
+                <input type="email" id="email" style="grid-column: 2; grid-row: 2;" name="email"
+                    placeholder="Enter your email" required>
+                <input id="submit" style="grid-column: 1 / span 2; grid-row: 3;" type="submit" value="Register">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <section class="section-padding">FreeCodeCamp | Build a product landing page | 2022</section>
+        <section class="licenses, section-padding, flex-centered,flex-column">
+            <h3>Licenses and links for images and fonts used on this website</h3>
+            <div id="licenses-list" class="flex-centered">
+                <ul>
+                    <li><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" target="_blank">Open
+                            Font License</a>: Font Marck Script used beside title image designed by <a
+                            href="https://fonts.google.com/specimen/Marck+Script?category=Handwriting#standard-styles"
+                            target="_blank">Denis Masharov and available on fonts.google.com</a></li>
+                    <li><a href="https://pixabay.com/de/service/license/" target="_blank">Pixabay License</a>: Video
+                        owns by <a href="https://pixabay.com/de/videos/cuong-bonsai-gras-baum-plant-flora-90651/"
+                            target="_blank">DuyCuong1080</a> on pixabay</li>
+                    <li><a href="https://pixabay.com/de/service/license/" target="_blank">Pixabay License</a>: Price
+                        plant images owns by <a
+                            href="https://pixabay.com/de/vectors/blumen-pflanze-garten-bl%c3%a4tter-gras-34592/"
+                            target="_blank">Clker-Free-Vector-Images</a> on pixabay"</li>
+                    <li><a href="https://pixabay.com/de/service/license/" target="_blank">Pixabay License</a>: Title
+                        plant image owns by <a
+                            href="https://pixabay.com/de/illustrations/palme-blatt-gr%c3%bcn-botanik-tropisch-4211167/"
+                            target="_blank">studio2013</a> on pixabay"</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
